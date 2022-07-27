@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+
+    <title>Emergency Application</title>
+</head>
+
+<body>
+    <!-------------------------------Navigator--------------------------------------------->
+    <header>
+        <a class="logo" href="index.html">Emergency Team</a>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="storymap.html">Over View</a>
+            <a href="dash.html">DashBoard</a>
+            <a id="hold" href="#">My App</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signin.html"><i style="font-size:24px" class="fa">&#xf08b;</i></a>
+
+
+        </nav>
+    </header>
+    <!-----------------------------------------------------------MAP APPLICATION----------------------------------------------------------------->
+
+
+    <!----------------------------------- div has View map ---------------------------------------------------------------------->
+
+
+    <div id="viewDiv"> 
+
+
+
+    <!----------------------- divs have A text to make filter on Srvice Type on feature layer to show for User--------------------->
+
+    <div class="funcList" id="funcList1">
+        <ul>
+
+
+            <li>
+                <div>
+                    <label> Filter a service you want </label><br>
+                    <select id="filterServices" value="">
+                        <option value="All">All</option>
+                        <option value="Hospital">Hospitals</option>
+                        <option value="Ambulance">Ambulance Stations</option>
+                        <option value="Fire_Station">Fire Stations</option>
+                        <option value="Police_Station">Police Stations</option>
+                    </select>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <label> Find Other services </label><br>
+                    <select id="findServices" value="">
+                        <option value="Choose Service">Choose Service</option>
+                        <option value="ATM">ATM</option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Gas Station">Gas Station</option>
+                        <option value="Metro Station">Metro Station</option>
+                        <option value="Parking">Parking</option>
+                    </select>
+                </div>
+            </li>
+
+            <li> <button id="reportAcc">Report Accident</button> </li>
+
+
+            <li> <button id="isAvailability">Check Availability Capacity</button> </li>
+
+
+            <li>
+                <div>
+                    <label> Choose Tools </label><br>
+                    <select id="findTools" value="All Tools">
+                        <option value="All Tools">Choose Analysis</option>
+                        <option value="showServiceArea">Find Service Area</option>
+                        <option value="showOptimizeRoute">Find Optimize Route</option>
+                        <option value="checkFacilities">Find 3 Closest Hospital</option>
+                    </select>
+                </div>
+            </li>
+            <li> <button id="clearGraphic">Clear Graphics</button><br></li><br>
+            <li> <button id="resetAll">Reset All</button><br></li>
+
+
+        </ul>
+
+
+    </div>
+
+
+
+    <div>
+        <button id="menu" class="MenuBtn"></button>
+
+    </div>
+
+
+
+</div>
+
+    <!-----------------------------------------MAP APPLICATION JS Link----------------------------------------------->
+    <script src="https://js.arcgis.com/4.24/"></script>
+    <script src="App_JS.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

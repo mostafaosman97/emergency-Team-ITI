@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="AppOrgaization.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
+
+    <title>Organization App</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">Emergency Team</a>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <!-- <a href="storymap.html">StoryMap</a> -->
+            <a href="dashOrganization.html">DashBoard</a>
+            <a id="hold" href="#">My App</a>
+            <a  href="https://www.arcgis.com/apps/workforce/">Work Flow</a>
+
+            <a href="signin.html"><i style="font-size:24px" class="fa">&#xf08b;</i></a>
+
+            <!-- <a href="contact.html">About Us</a> -->
+
+
+
+        </nav>
+    </header>
+
+
+    <div id="viewDiv"> </div>
+
+    <div class="containerMenu">
+    <div class="funcList" id="funcList1">
+        <ul>
+
+
+            <li>
+                <div>
+                    <label> Filter a service you want </label><br>
+                    <select id="filterServices" value="">
+                        <option value="All">All</option>
+                        <option value="Hospital">Hospitals</option>
+                        <option value="Ambulance">Ambulance Stations</option>
+                        <option value="Fire_Station">Fire Stations</option>
+                        <option value="Police_Station">Police Stations</option>
+                    </select>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <label> Choose Requests Of Services </label><br>
+                    <select id="selectReqServices" value="All">
+                        <option value="All">All</option>
+                        <option value="Ambulance Center">Ambulance Requests</option>
+                        <option value="Fire Station">Fire Trucks Requests</option>
+                        <option value="Police Station">Police Requests</option>
+                    </select>
+                </div>
+
+            </li>
+
+
+
+
+            <li> <button role="switch" aria-checked="false"  class="checkBox" id="showDens">Show Heat Map</button> </li>
+
+            <li> <button role="switch" aria-checked="false"  class="checkBox" id="isAvailability">Check Availability Capacity</button> </li>
+
+
+            <li>
+                <div>
+                    <label> Choose Other Analysis Tools </label><br>
+                    <select id="findTools" value="All Tools">
+                        <option value="All Tools">Choose Analysis</option>
+                        <option value="showServiceArea">Find Service Area</option>
+                        <option value="showOptimizeRoute">Find Optimize Route</option>
+                        <option value="checkFacilities">Find 3 Closest Hospital</option>
+                    </select>
+                </div>
+            </li>
+
+            <li> <button id="clearGraphic">Clear Graphics</button></li><br>
+            <li> <button id="resetAll">Reset All</button><br></li>
+
+
+
+
+
+        </ul>
+
+    </div>
+
+    <div>
+        <button id="menu" class="MenuBtn" ></button>
+
+    </div>
+
+</div>
+    <!--------------------------------------------------------- Hot Spot --------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!-----------------------------------------MAP APPLICATION JS Link----------------------------------------------->
+    <script src="https://js.arcgis.com/4.24/"></script>
+
+    <script src="AppOrganization.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
