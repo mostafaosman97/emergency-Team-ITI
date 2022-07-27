@@ -25,7 +25,7 @@ require(["esri/widgets/AreaMeasurement2D", "esri/Map", "esri/views/MapView",
     Directions, RouteLayer, LayerList, Expand
   ) {
 
-    esriConfig.apiKey = "AAPK05a3b453364246839955d89db08bc444J9Tiv06Xl9kl127TNWbw4yNROxO8CFrt9lIiZozefVMOxLiQ0Fv_uoit0EuduT8a";
+    esriConfig.apiKey = "AAPK837d909fd76342b59553315827b141d2_pLE7B6gvS3wj4U1eFMcK0_LpR1ySqBg8h8MR4BZLnquOKmESNZRRM9Tga1PxGyR";
 
 
 
